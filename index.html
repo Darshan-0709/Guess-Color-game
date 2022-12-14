@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Color</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="hero">
+        <div class="container">
+          <p class="hero__title">The great</p>
+          <h1 data-hero-color class="hero__color"></h1>
+          <p class="hero__title">Guessing Game</p>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="container d-flex js-around">
+          <div class="bar__color__btn">
+            <button data-new-color class="button">New colors</button>
+          </div>
+          <div class="bar__difficulty">
+            <button data-easy class="button">Easy</button
+            ><button data-hard class="button">Hard</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="color__container">
+        <div class="container d-flex fd-column f-gap ai-center">
+          <div class="display__color__box d-flex f-gap">
+            <div data-display-color class="display__color"></div>
+            <div data-display-color class="display__color"></div>
+            <div data-display-color class="display__color"></div>
+          </div>
+          <div
+            data-more-color
+            class="display__color__box d-flex box__hard f-gap"
+          >
+            <div data-display-color class="display__color"></div>
+            <div data-display-color class="display__color"></div>
+            <div data-display-color class="display__color"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
